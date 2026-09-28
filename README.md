@@ -6,16 +6,26 @@
 </p>
 <h3 align="center">Run GPU jobs without managing GPU infrastructure.</h3>
 <p align="center">
-  <a href="https://symbioza.dev">symbioza.dev</a> · <a href="https://symbioza.dev/agent">For agents</a> · <a href="https://symbioza.dev/examples">Examples</a> · <a href="https://github.com/symbioza/claude-plugin">Claude Code plugin</a> · <a href="https://x.com/SymbiozaDev">X</a>
+  <a href="https://symbioza.dev">symbioza.dev</a> · <a href="https://symbioza.dev/examples">Examples</a> · <a href="https://symbioza.dev/pricing">Pricing</a> · <a href="https://x.com/SymbiozaDev">X</a>
 </p>
 
-Symbioza runs a containerized GPU job on a rented cloud machine under a hard dollar ceiling and collects available artifacts. An agent submits an image, a command and a budget through one MCP connector. Symbioza selects compute, runs the job and reports output delivery and billing separately. Recovery depends on job policy, available compute, remaining budget and compatible checkpoint support.
+Your AI agent sends a containerized job and a total spending limit. Symbioza runs it on a cloud GPU and collects
+the files it writes, and you are never billed more than your budget. Estimates are free.
 
-**Use it from Claude Code**, with one plugin:
+**Start from the client you use:**
+
+| Client | How to connect |
+|---|---|
+| **Claude Code** | The plugin: [symbioza/claude-plugin](https://github.com/symbioza/claude-plugin) · [setup guide](https://symbioza.dev/plugins#claude-code) |
+| **ChatGPT** | [Add Symbioza to ChatGPT](https://symbioza.dev/plugins#chatgpt) |
+| **Claude** | [Add it in Claude](https://symbioza.dev/plugins#claude-ai) |
+| **Any other remote MCP client** | [Connect `https://symbioza.dev/mcp`](https://symbioza.dev/plugins#other-clients) |
+
+In Claude Code:
 
 ```bash
 claude plugin marketplace add symbioza/claude-plugin
 claude plugin install symbioza@symbioza
 ```
 
-Or connect an MCP client to `https://symbioza.dev/mcp`. Sign in through the browser; estimates are free.
+Sign in through the browser on first use, ask for a free estimate, and submit only when you are ready.
